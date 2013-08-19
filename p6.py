@@ -18,9 +18,9 @@ def unzipfile(filename, startid):
     
     while True :
         print startid
-        str = z.read('%s.txt'%startid)
-        print str
-        rslt = r.findall(str)
+        strs = z.read('%s.txt'%startid)
+        print strs
+        rslt = r.findall(strs)
         print rslt
         des +=z.getinfo('%s.txt'%startid).comment
         
